@@ -1,0 +1,6 @@
+# script in json fil 
+
+# modules:
+module.export
+
+  

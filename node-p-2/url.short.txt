@@ -1,0 +1,13 @@
+url shortner project :----------
+
+1 = take url keep them short 
+2 = also keep the track click on the new short url click . 
+
+
+route : - 
+
+post / url : - take url make short url return it 
+
+get/:id - redirect the user to origial url 
+
+get/url/analytic/:id : - return the click for the provider short id .

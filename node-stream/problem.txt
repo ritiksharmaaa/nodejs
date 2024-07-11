@@ -1,0 +1,45 @@
+why we requirement for  stream 
+
+: ex 
+
+we have text file inside file have some content and have 50 mb size .
+
+we want to read  the contentn of file in and  send in response on hitting aurl each time when user click on that url .
+
+when we read a file to send dat ato use first we read entire 400 mb data to in our memory than we are sending to user . 
+so we have to first stored those 400 data to in memory than we send to user so here memory consumption is very high .
+
+instead of storing in  our memeory we direct read one line send to user than remove those one line read next line and send to user . 
+
+we call this functionality a stream .
+
+meaning of stream : --- 
+
+see youtube data come and it server it constantely .
+
+same a stream is used there . 
+
+
+we call it to stream read file in chunks . by chunks . 
+
+we send this chunks to browser via response .  we call this pipeline 
+
+how it work behind the seen : 
+
+ctual we put header trancoding -encoding in chunks : 
+
+so it tell brwoser dont collection the connection imediately getting reposne from server wait we send you data in chunks . so browser http not close connection until it stream not end .
+
+
+
+------------------------project way looking stream ---
+
+suppose we have to zip a file so first we have to read the content of file and we have to zip the file . and than we write to browser 
+
+can it work for 400 mb file : if 400 file read 400 read now making 400mb file zib in memory so our memeory consumption is 800mp .
+
+
+so our approch we use stream to read data but what about zibit make 400 zip file in memeory .
+
+
+

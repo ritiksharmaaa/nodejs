@@ -1,0 +1,64 @@
+authincatation method : 
+
+statefull or stateless ;
+
+statefull : where we are maintaning a state in our server .
+stateless : no mantaining a state in server ...
+
+we went parking it give ticket note ticket id in register . so next time i show my ticket it give me my bike . this 
+is statefull auth.
+
+stateless : it create a ticket for you where you id time data is writen and stamp on it . so when user is came we just see our stamm have or not if not we not give data and if have we give there care .
+
+
+
+implementation of statefull : 
+
+we give user name and password : -
+
+and in return we give a UNIQUE UID :  called session user id . and we store it user id with that seesion id .so we imediately use that userto set in request object .
+
+and save thsi uid in our db . 
+
+how this ui send to user : 
+
+cookies 
+response 
+header
+
+- if server side we are using cookies is best :
+
+- but if yiu use rest api we are use header . beacuse we dont know who is client because cookie only use in web not in app nor in iot, 
+
+express flow : 
+
+client request express server -- we have express middleware who check for cookie value of uid . if valid call next else reject the request .
+
+
+
+----------------------------------stateless-auth ------------------------------.
+
+
+we send request to server - it check some data in cookie an header if not it send to home page because homeis is sees by all user but we are restric some content that this page is only see by  user who login at that time in function we see req.user or may be we can user of middleware to check user login or not . 
+
+but at first time request we check for some data in request .
+
+so when we have to acces some user based data it redirect to login page or singup page . 
+
+when signup happen smoothly . 
+
+after signup user try login it give username and password check if it valid or not when it valide 
+
+in session we create id and save data to in server memory with there data so nect time when it send session id we check if it have in out memory or not we put data in req.user..
+
+
+
+in jwt what we do we cant store anything : 
+
+insted we take these  data and encrypt with our seceret code and send and genrate a signgid and send this data touser cookie headerand response . 
+so next time when user request we check the cookie if have we check if this is valid or not if it valid we get  user data . 
+
+in session we store user data in our memory which have painful 
+
+in jwt we put data in user cookie we just check if it valid or not if it valid we are gettin guser data . 
+

@@ -1,0 +1,41 @@
+ how we commmunicate with server we know we send request our serverr response after response we close the connection with server . 
+
+ this response request cycle run continiously ;
+
+ what the problem  in this  commmunicate : 
+
+ the prboble is that here  only commmunicate happen one side user send request server give respond bu there server can commmunicate with client . so here communcation is one  direction ..
+
+ here client the commucate with server. it can t communicate with client . that the big problem . 
+ 
+
+---------------------------------
+
+
+we are making a chatting application and it a real time chating application : 
+
+we have two client one server : 
+
+client a send message to server a server is communcation is one way. so so when client a send message to server server recive but but now how it send data to user because server cant : here another user have to request each to ask is there any message for me so it user responsiltiy to ask about is there any thing for me or not so user have to send lot of request and lot of waste respond we have . 
+
+
+so the mettod to ask about mesage is called polling protocol here user can  disconnect with server but server not give respons eto you . because we are asking fo rmessage each time .
+
+so solve this proble we ahve a solution called websocket . 
+
+
+how communcation happen :  in websocket : 
+
+
+client send a simple http request  to server and ask to make a websocket : this happen via update header in request basicaly web socket is http2.0 
+
+than server respond accept is and make a connection which pesist untin clinet or server close this connection .
+
+now server can send multiple message to client and client also send multiple message t server .
+
+here commmunicate happen bi-directional .
+
+ex: - 
+
+two client connect with server and on eclient send message to server now server are able to commmunicate with client now server send mesage to client 2 and her commmunicate happen real time .
+

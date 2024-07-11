@@ -1,0 +1,7 @@
+if you write all the route in main file it lit bit painful for handel or managable .
+mvt : working model view template .
+mvc : model view controller 
+
+model manage by controller 
+view mange by route .
+

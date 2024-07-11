@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>web socket chatting app ..</h1>
+    <input type="text " id="message" placeholder="enter message:">
+    <button id="sendbtn">Send</button>
+    <div id="allmessages"></div>
+    <!-- <button onclick="createConection()"> create websocket conection </button> -->
+    <script src="socket.io/socket.io.js"></script>
+    <!-- this way work in only node js otherwise you have to use client js file for socket here  we utile socket server have client file which we get in our index  -->
+    <script>
+        const sendbtn  = document.getElementById("sendbtn")
+        const messageinput = document.getElementById("message")
+        const allmessages = document.getElementById("allmessages")
+        const socket = io();
+        socket.on("message" , (message)=>{
+            const p = document.createElement('p')
+            p.innerHTML = message
+            allmessages.appendChild(p)
+
+            console.log(message , "message back from server ")
+        })
+        sendbtn.addEventListener("click" , e =>{
+            const message = messageinput.value;
+            console.log(message)// send this message to server 
+            socket.emit("user-message" , message)
+
+        })
+
+
+
+        // function createConection(){
+        //     const socket = io();
+
+            
+        // }
+    </script>
+  </body>
+</html>

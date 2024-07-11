@@ -1,0 +1,30 @@
+no sql  document based database 
+strong support for aggregration pipe line . 
+work on bson formate 
+bst for node application 
+
+in sql we have table here we have collection 
+
+in my sql we ahve tuple here document 
+
+
+mongo command : - 
+
+show db 
+yse db name 
+shows collection 
+db.coll.find()
+db.coll.insert()
+
+
+after installi ng server locall on 
+
+mongo sh 
+
+---------------------------------working of moongoose -------
+
+schema define the structure .
+
+and using schema we create model and 
+
+and using model we are perfoming crud operation ..

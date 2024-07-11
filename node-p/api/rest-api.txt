@@ -1,0 +1,75 @@
+# rest full api term use in backend development : - 
+
+how it diffrent from normal api 
+ rest api is nothing but it a best practice way or rule to mske a api than we callled that api is rest api 
+
+
+#server  client 
+
+client is anything ex : - browser mobile alexa 
+
+client request server response 
+
+there is some rule or standard( not considered in market ) is used for request and response .
+
+---------------------------
+
+we use what industries used which sccalable .
+
+1 rule : work on server and client architecture 
+
+2 rule : server and client both are independent .
+
+ex response : may be text image html json 
+
+user get for blog : server fetch data from db and make html file and send it to you :
+
+here IMPO : - if client is browser so it work well .  (WE call it SSR () server side rendering )
+
+but what if mobile and alexa .  and here server decide how we have to structure a data in html .
+
+
+----------
+
+here our client is depend on server that they give data to me which is consume by me . 
+
+--- in rest api  that is not happening we just send data to user and they have to decide what they have to do with that data . 
+
+request came servert send data in paticular formate and client used it in own way . in past used xml now JSON data . 
+
+client get data and rendered it in own way  we call it (CSR) client side rendering (it slow like react .) . 
+
+
+
+---------------------if we have no that our client is browser so good practive to use html . 
+
+if you have cross platform you have to use it rest html . 
+
+3 rule : ---
+
+always respect all http methods : my rule it we have to do it convenient . 
+
+ good way to add custoom header 
+
+
+htttp ----------------------------------------
+header 
+
+res.setheader("X-custome " : "new header ")
+
+http status code ----------
+
+100 to 199 : - infromation status 
+200  to 299 : success status 
+300 to 399 : redirect status  
+400 to 499: client error response 
+500  to 599 : server error 
+
+
+
+
+
+
+
+
+

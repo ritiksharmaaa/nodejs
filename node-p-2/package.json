@@ -1,0 +1,19 @@
+{
+  "name": "node-p-2",
+  "version": "1.0.0",
+  "description": "part 2 of piyush garg node backend series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node new.js"
+  },
+  "author": "ritiksharma",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "nanoid": "^5.0.7",
+    "shortid": "^2.2.16"
+  }
+}

@@ -1,0 +1,64 @@
+<nav>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the navbar */
+nav {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.content {
+    /* Styles for your main content area */
+    padding: 20px;
+}
+
+    </style>
+        <div class="logo">
+            <a href="#">Your Logo</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>

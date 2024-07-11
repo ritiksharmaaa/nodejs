@@ -1,0 +1,14 @@
+why we require cluster :
+
+because when we have multipl user in our one node server :
+
+so concurenlty user increase load on node server increase : 
+
+or user may face more waiting time to get response ....
+
+in this situation we use cluster module of node js .
+
+it create multilpe node server and manage server amoung thread .
+
+how it work so we hava a main server ---> behind the main server we create multiple intance of server with same code .
+

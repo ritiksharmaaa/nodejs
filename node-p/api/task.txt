@@ -1,0 +1,25 @@
+# what we have to do in nodejs to build rest api 
+
+rest api : - 
+
+get /user - list all users 
+get /user/1 - get the user with id 1 
+get /user/2 - get the user with id 2
+
+post /user - create user 
+
+pathch /user/1 - edit the user data id 1 
+
+delete /user/1 - delete the user id 1 .
+
+
+hybride server : mean which ave both ssr renderening and csr : 
+
+we want when request came : /user - we return html rendered data :
+
+when :/ api/user  : it send json data 
+
+dynamic path parameter : --
+
+/user/:id == this collean tell you this is dynamic url 
+
